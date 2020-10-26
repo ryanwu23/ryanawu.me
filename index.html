@@ -14,7 +14,7 @@
 
   <div class="tab">
     <div class="image">
-      <img src="profile.jpeg">
+      <img src="images/profile.jpeg" class="profile">
     </div>
     <button class="tablinks" onclick="openPage(event, 'About')" id="defaultOpen">Basic Info</button>
     <button class="tablinks" onclick="openPage(event, 'Technical')">Technical Skills</button>
@@ -24,32 +24,84 @@
 
   <div id="About" class="tabcontent">
     <div class="content">
-      <p>Ryan is an undergraduate student in the Dartmouth College class of 2023 and is pursuing a double major in computer science and economics.
-        He is from Lexington, Massachusetts, and has spent the majority of his life there.
-        He has 4 brothers and a dog named Mufasa (named after the lion king).
+      <p>I am a sophomore at Dartmouth College and pursuing a degree in computer science and on a pre-medical track.
+        I have acedemic interests in both computer science and in medicine and hope to work in the intersection of the two fields as I believe computational medicine is the future of medicine.
+        I was born in Missouri but am from and have spent most of my life in Lexington, Massachusetts, a suburb outside of Boston.
+        I have 4 brothers (3 older and one younger) and a dog named Lychee.
       </p>
+      <img src="images/dartmouth.png" class="dart">
+      <img src="images/lexington.png" class="lex">
     </div>
   </div>
 
   <div id="Technical" class="tabcontent">
-    <h3>About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="content">
+      <h2>Programming Languages:</h2>
+      <p>Java, Python, C, html, css, Javascript</p>
+      <h2>Dartmouth CS Courses:</h2>
+      <p>Object Oriented Programming (CS10)</p>
+      <p>Discrete Mathematics (CS30)</p>
+      <p>Software Design and Implementation (CS50)</p>
+      <p>Artificial Intelligence (CS76)</p>
+      <p>Linear Algebra (MATH22)</p>
+      <h2>Past Experiences:</h2>
+      <h3>Laboratory of Medical Imaging and Computation (Jun 2018 - Sep 2018)</h3>
+      <p>Machine Learning Intern</p>
+      <p>Used python to program and co-publish a brain hemorrhage identification application which is used by medical professionals at Massachusetts General Hospital.
+        This application uses machine learning to detect the probability of a brain hemorrhage in any CT image uploaded.
+        Can't share the github repo nor the application because the lab and hospital doesn't allow it.
+        Below is an example of the application.
+      </p>
+      <img src="images/lmic.png" class="lmic">
+      <h3>KTByte Computer Science Academy (Jun 2020 - present)</h3>
+      <p>Instructor</p>
+      <p>Teach classes of around 10 students in Java on programming basics such as recursion, arrays, hashtables, loops, etc.</p>
+      <h3>Alliance for Sustainable Communities (Sep 2020 - present)</h3>
+      <p>Software Engineer Intern</p>
+      <p>Just started working as a SWE for this non-profit.
+      Using an application called plone to develop their communications and management platform.</p>
+    </div>
   </div>
 
   <div id="More" class="tabcontent">
-    <h3>About</h3>
-    <p>London is the capital city of England.</p>
+    <div class="content">
+      <h3>Swimming</h3>
+      <p>I have been swimming ever since I was around 10 and swam up until last year.
+        Swimming was a big part of my high school experiance and I served as captain of the varisty boys team my senior year.
+        My favorite stroke is definitely backstroke or freestyle and I hate butterfly with a passion.
+        Even though I stopped swimming in college I still love to get into the pool as much as I can.
+      </p>
+      <img src="images/swim.jpg" class="swim">
+      <h3>Family</h3>
+      <p>I have 4 brothers in my family.
+        The oldest is in the workforce and two of them attend Emory University.
+        My younger brother is a sophomore in High School and I also have a pomeranian named Lychee.
+      </p>
+      <img src="images/lychee.jpeg" class="lychee">
+      <h3>Other Activities on Campus</h3>
+      <p>On campus I am also a part of the badminton club, the Dartmouth Investment and Philanthropy Program (DIPP), and TAMID (a investment and consulting club).</p>
+    </div>
   </div>
 
   <div id="Contact" class="tabcontent">
     <div class="content">
       <h3>Contact Information</h3>
       <ul>
-        <li class="email"><i class="fas fa-envelope"></i></li>
-        <li class="phone"><i class="fas fa-phone-alt"></i></li>
-        <li class="github"><i class="fab fa-github"></i></li>
+        <li class="email" onclick="iconInfo('email')"><i class="fas fa-envelope"></i></li>
+        <li class="phone" onclick="iconInfo('phone')"><i class="fas fa-phone-alt"></i></li>
+        <li class="github"onclick="iconInfo('github')"><i class="fab fa-github"></i></li>
       </ul>
       <p>Select one above.</p>
+      <div id="email" class="iconcontent">
+        <p>Personal Email: wuryan999@gmail.com</p>
+        <p>School Email: ryan.a.wu.23@dartmouth.edu</p>
+      </div>
+      <div id="phone" class="iconcontent">
+        781-296-5150
+      </div>
+      <div id="github" class="iconcontent">
+        <a href="https://github.com/ryanwu23">github.com/ryanwu23</a>
+      </div>
     </div>
   </div>
 
