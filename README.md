@@ -2,7 +2,7 @@
 This is the code base of my personal website.
 
 ## Viewing the website:
-You can see the cite at ryanawu.me or if you want to run it on your local machine, run python -m SimpleHTTPServer 9000 in the directory and open http://localhost:9000/.
+You can see the cite at http://ryanawu.me/ or if you want to run it on your local machine, run python -m SimpleHTTPServer 9000 in the directory and open http://localhost:9000/.
 
 ## Implementation:
 The website was implemented using HTML, CSS and JavaScript.
